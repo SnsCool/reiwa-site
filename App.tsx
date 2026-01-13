@@ -67,13 +67,16 @@ const App: React.FC = () => {
     if (appState !== 'RESULT') return CEOS[0];
     let minDistance = Infinity;
     let closestCEO = CEOS[0];
+
+    // 結果を平等に分散させるため、わずかなランダム要素（ジッター）を加味して計算
     CEOS.forEach((ceo) => {
       const distance = Math.sqrt(
         Math.pow(ceo.traits.logic - userTraits.logic, 2) +
         Math.pow(ceo.traits.strict - userTraits.strict, 2) +
         Math.pow(ceo.traits.social - userTraits.social, 2) +
         Math.pow(ceo.traits.risk - userTraits.risk, 2)
-      );
+      ) + (Math.random() * 0.1); // 0.1未満の微小なランダム値を加算してタイを解消し分散させる
+
       if (distance < minDistance) {
         minDistance = distance;
         closestCEO = ceo;

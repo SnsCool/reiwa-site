@@ -11,7 +11,7 @@ export const CEOS: CEO[] = [
     business: "武田塾の全国展開、FCチャンネルを通じたフランチャイズ構築支援。",
     philosophy: "「実績がすべて」。無駄を削ぎ落とし、最短ルートで成功を掴み取る経営。",
     motivation: "「授業をしない」という逆転の発想で教育界に革命。挫折を経て、さらに強固なビジネスモデルを再構築。",
-    traits: { logic: 5, strict: 5, social: 4, risk: 4 }
+    traits: { logic: 5, strict: 5, social: 3, risk: 4 }
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const CEOS: CEO[] = [
     business: "カードショップ「晴れる屋」の創業、エンタメ系ビジネス、アパレル展開。",
     philosophy: "「喜びを広げる」。ビジネスを通じて世界をより楽しく、豊かに変えること。",
     motivation: "マジック：ザ・ギャザリングへの愛からスタートし、趣味を巨大な経済圏へと成長させた。",
-    traits: { logic: 3, strict: 1, social: 5, risk: 5 }
+    traits: { logic: 2, strict: 1, social: 5, risk: 5 }
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const CEOS: CEO[] = [
     business: "ホストクラブグループ「NGG」の運営、通販、YouTube総合演出。",
     philosophy: "「属人的な力を仕組み化する」。誰がやっても勝てる組織の構築。",
     motivation: "歌舞伎町での熾烈な競争を勝ち抜き、水商売の社会的地位向上と組織化を目指した。",
-    traits: { logic: 5, strict: 4, social: 4, risk: 3 }
+    traits: { logic: 5, strict: 4, social: 5, risk: 3 }
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const CEOS: CEO[] = [
     business: "フィリピン人による家事代行サービス「ピナイ」の運営。",
     philosophy: "「真っ向勝負」。ごまかしのない誠実な経営と社会貢献の両立。",
     motivation: "日本の労働力不足と少子高齢化を、外国籍人材の活用という切り口で解決するため。",
-    traits: { logic: 3, strict: 2, social: 3, risk: 3 }
+    traits: { logic: 3, strict: 3, social: 2, risk: 2 }
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const CEOS: CEO[] = [
     business: "美容外科「アマソラクリニック」院長、医学部受験塾「MEDUCATE」経営。",
     philosophy: "「バランスと合理性」。専門性を武器に、複数の領域で頂点を目指す。",
     motivation: "医学部受験業界と美容外科業界、両方の古い体質を実力と発信力で改革するため。",
-    traits: { logic: 4, strict: 3, social: 4, risk: 4 }
+    traits: { logic: 4, strict: 2, social: 5, risk: 4 }
   },
   {
     id: 14,
@@ -66,7 +66,7 @@ export const CEOS: CEO[] = [
     business: "「りらくる」の創業、事業売却。現在は複数の事業をプロデュース。",
     philosophy: "「模倣と革新」。ゼロから作らず、勝てるモデルを高速で横展開する。",
     motivation: "「貧乏から抜け出したい」という純粋な渇望からスタートし、圧倒的な富を築いた。",
-    traits: { logic: 4, strict: 5, social: 3, risk: 5 }
+    traits: { logic: 4, strict: 5, social: 2, risk: 5 }
   },
   {
     id: 20,
@@ -77,18 +77,18 @@ export const CEOS: CEO[] = [
     business: "WEBコンサルティング「StockSun」の運営、年収チャンネルの主催。",
     philosophy: "「資本主義のハック」。効率的に稼ぎ、個の価値を最大化する。",
     motivation: "大手コンサルの非効率さに疑問を抱き、優秀な個が集まる最強の組織を作るため。",
-    traits: { logic: 5, strict: 5, social: 4, risk: 4 }
+    traits: { logic: 5, strict: 5, social: 4, risk: 5 }
   },
   {
     id: 17,
     name: "迫 佑樹",
-    xLink: "https://x.com/yuki_99_s",
-    xUsername: "yuki_99_s",
+    xLink: "https://x.com/sako_brain",
+    xUsername: "sako_brain",
     personality: "穏やかな物腰の裏に、底知れない論理思考を秘めた若き天才。複雑なビジネスを最小の労力で回すための自動化・仕組み化のスペシャリストです。謙虚でアドバイスも的確ですが、その実態は「自由」を何よりも愛する自由人。お金を稼ぐことそのものよりも、それによって得られる時間や健康、メンタルの安定を重視しています。感情に流されず、常に自責で物事を捉える姿勢は、まさに現代の賢者と言えます。",
     business: "知識共有プラットフォーム「Brain」の運営、実店舗経営の自動化。",
     philosophy: "「スキルで自由を掴む」。個人が依存せずに生きていける世界を作る。",
     motivation: "一度メンタルダウンを経験したからこそ、誰もが精神的に健やかに働ける環境を作りたい。",
-    traits: { logic: 5, strict: 2, social: 4, risk: 3 }
+    traits: { logic: 5, strict: 1, social: 4, risk: 2 }
   },
   {
     id: 12,
@@ -99,7 +99,7 @@ export const CEOS: CEO[] = [
     business: "「銀座クラブNanae」の経営、美容・ライフスタイル発信。",
     philosophy: "「徳を積む」。人と人の縁を大切にし、感謝の連鎖で人生を豊かにする。",
     motivation: "夜の世界の社会的地位向上と、銀座という街への恩返しのために1棟ビル経営に挑んだ。",
-    traits: { logic: 2, strict: 3, social: 5, risk: 5 }
+    traits: { logic: 1, strict: 4, social: 5, risk: 4 }
   },
   {
     id: 6,
@@ -110,7 +110,7 @@ export const CEOS: CEO[] = [
     business: "介護・医療・福祉分野における多角的な事業展開。",
     philosophy: "「介護を明るく」。必要とされる場所に光を当て、持続可能な社会を作る。",
     motivation: "若かりし頃の浮ついた経営を反省し、社会のインフラとなる介護業界へ骨を埋める覚悟を決めた。",
-    traits: { logic: 4, strict: 2, social: 3, risk: 2 }
+    traits: { logic: 3, strict: 2, social: 3, risk: 1 }
   }
 ];
 
@@ -119,7 +119,7 @@ export const QUESTIONS: Question[] = [
     id: 1,
     text: "意思決定をする際、どちらを重視しますか？",
     options: [
-      { text: "徹底したデータと論理。数字がすべて。", scores: { logic: 5 } },
+      { text: "徹底したデータと論理向。数字がすべて。", scores: { logic: 5 } },
       { text: "直感と情熱。心の底からワクワクするか。", scores: { logic: 1 } }
     ]
   },
