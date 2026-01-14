@@ -1,9 +1,10 @@
-
 import React, { useState, useCallback, useMemo } from 'react';
 import { AppState, CEO } from './types.ts';
 import { QUESTIONS, CEOS } from './constants.ts';
 import QuestionCard from './components/QuestionCard.tsx';
 import ResultView from './components/ResultView.tsx';
+
+const MAINTENANCE_MODE = import.meta.env.VITE_MAINTENANCE_MODE === 'true';
 
 interface TraitHistory {
   logic: number[];
@@ -84,6 +85,33 @@ const App: React.FC = () => {
     });
     return closestCEO;
   }, [appState, userTraits]);
+
+  if (MAINTENANCE_MODE) {
+    return (
+      <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-center py-8">
+        <header className="mb-12 text-center">
+          <h1 className="text-4xl md:text-6xl font-black italic tracking-tighter text-gray-900">
+            令和の虎 <span className="gold-text">診断</span>
+          </h1>
+          <p className="text-gray-400 mt-2 font-medium tracking-widest uppercase text-xs md:text-sm">Tiger Funding Diagnosis</p>
+        </header>
+        <main className="w-full flex-1 flex flex-col items-center justify-center px-4">
+          <div className="text-center max-w-xl">
+            <p className="text-2xl md:text-3xl font-black text-gray-900 mb-6">
+              メンテナンス中
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              現在サイトはメンテナンス中です。<br />
+              しばらくお待ちください。
+            </p>
+          </div>
+        </main>
+        <footer className="mt-12 text-gray-400 text-xs tracking-widest uppercase">
+          &copy; 2024 Tiger Funding Diagnosis
+        </footer>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-center py-8">
